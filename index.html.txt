@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StayEase - Hotel Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>StayEase</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#hotels">Hotels</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="mybookings.html">My Bookings</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Welcome to StayEase</h1>
+    <p>Find and Book Your Perfect Hotel</p>
+
+    <input type="text" id="search"
+    placeholder="Search hotel or city">
+
+    <button onclick="searchHotels()">Search</button>
+</section>
+
+<section class="container" id="hotels">
+    <h2>Our Popular Hotels</h2>
+
+    <div class="hotel-container">
+
+        <div class="hotel-card">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600" alt="Grand Luxury Hotel">
+            <h3>Grand Luxury Hotel</h3>
+            <p>Hyderabad</p>
+            <h3>₹3500 / Night</h3>
+            <button onclick="bookHotel(1)">Book Now</button>
+        </div>
+
+        <div class="hotel-card">
+            <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=600" alt="Royal Palace Hotel">
+            <h3>Royal Palace Hotel</h3>
+            <p>Bangalore</p>
+            <h3>₹4000 / Night</h3>
+            <button onclick="bookHotel(2)">Book Now</button>
+        </div>
+
+        <div class="hotel-card">
+            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=600" alt="Ocean View Resort">
+            <h3>Ocean View Resort</h3>
+            <p>Chennai</p>
+            <h3>₹2800 / Night</h3>
+            <button onclick="bookHotel(3)">Book Now</button>
+        </div>
+
+    </div>
+
+    <p id="noResults" hidden>No hotels found.</p>
+</section>
+
+<footer>
+    <p>© 2026 StayEase Hotel Booking System</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
